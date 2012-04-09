@@ -75,7 +75,16 @@
 	)
       {:apple 1
        :banana 1}
-      {:turkey-fillet 101/75}
+      (assoc (*meals* :meat-balls) :serves 3)
+      {:cherry-tomato 1/4
+       :spanish-olive 1/6
+       :cucumber 1/5
+       :carrot-raw 1/2
+       :capsicum-raw 1/2
+       :feta-cheese 0.25
+       :joghurt-kraeuter-dressing 0.3}
+      {:wine 3
+       :cottage-cheese 0.5}
       ])
 
 (def meals-today (var-get (ns-resolve *ns* (symbol (str "meals-" (.format (java.text.SimpleDateFormat. "yyyyMMdd") (java.util.Date.)))))))
