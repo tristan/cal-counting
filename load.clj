@@ -1,0 +1,1 @@
+(load-file "c:/Users/Tristan/Desktop/cal-stuff/calc.clj")
