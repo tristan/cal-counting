@@ -10,13 +10,29 @@
    :capsicum-raw 1/8
    :olive-oil 1/20}
   :meat-balls ; ~169.5 kcal
-  ; made 11 from 500g ground beef
-  {:ground-beef 5/11
+  {:ground-beef 5/11 ; made 11 from 500g ground beef
    :onion-cooked 1/11
    :egg 1/22
    :emmentaler 1/22
    :olive-oil 1/110
    :bread-crumbs 1/44}
+  :unique-salad
+  {:lettuce 2
+   :capsicum-raw 0.25
+   :cherry-tomato 0.25
+   :carrot-raw 0.25
+   :raddish-raw 0.25
+   :cucumber 0.25
+   :joghurt-kraeuter-dressing 0.6} ; because it's not light (i assume)
+  :frikadeller
+  {:ground-beef 1.25
+   :onion-cooked 0.46
+   :egg 0.09
+   :olive-oil 1/20
+   :white-bread 1/3
+   :butter 0.02
+   :garlic 0.01
+   :mustard 0.015}
   }
  )
 
@@ -70,9 +86,9 @@
 (def meals-20120409
      [{:bcaa 2}
       (assoc (*meals* :chicken-burrito)
-	:serves 2
-	:joghurt-mild-0.1pct-fett 0.25
-	)
+        :serves 2
+        :joghurt-mild-0.1pct-fett 0.25
+        )
       {:apple 1
        :banana 1}
       (assoc (*meals* :meat-balls) :serves 3)
@@ -85,6 +101,16 @@
        :joghurt-kraeuter-dressing 0.3}
       {:wine 3
        :cottage-cheese 0.5}
+      ])
+
+(def meals-20120410
+     [
+      {:bcaa 2}
+      (*meals* :unique-salad)
+      (assoc (*meals* :frikadeller) :serves 1.5)
+      {:fried-potato 1}
+      {:apple 1
+       :banana 1}
       ])
 
 (def meals-today (var-get (ns-resolve *ns* (symbol (str "meals-" (.format (java.text.SimpleDateFormat. "yyyyMMdd") (java.util.Date.)))))))

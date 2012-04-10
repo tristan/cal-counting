@@ -151,4 +151,46 @@
        :protein 5.5
        :carbs 6.9
        :fat 0.1}
+      :lettuce
+      {:serve-size 72 ; cup
+       :cals 10.08
+       :fat 0.101
+       :carbs 2.138
+       :protein 0.648}
+      :radish-raw
+      {:serve-size 116 ;cup
+       :cals 18.56
+       :fat 0.116
+       :carbs 3.944
+       :protein 0.789}
+      :white-bread
+      {:serve 45 ; cup
+       :cals 119.7
+       :fat 1.481
+       :carbs 22.775
+       :protein 3.438}
+      :butter
+      {:serve 227 ; cup
+       :cals 1627.59
+       :fat 184.12
+       :carbs 0.136
+       :protein 1.93}
+      :garlic
+      {:serve 136 ; cup
+       :cals 202.64
+       :fat 0.68
+       :carbs 44.926
+       :protein 8.65}
+      :mustard
+      {:serve 100
+       :cals 66
+       :fat 4.02
+       :carbs 5.34
+       :protein 4.38}
+      :fried-potato
+      {:serve 100
+       :cals 128
+       :fat 4
+       :carbs 20
+       :protein 3}
      })

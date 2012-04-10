@@ -1,4 +1,7 @@
-(def pwd "c:/Users/Tristan/Desktop/cal-stuff/")
+(def ^:dynamic *file-separator* (System/getProperty "file.separator"))
+(def pwd (str (System/getProperty "user.home") *file-separator*
+              "projects" *file-separator* "cal-counting" *file-separator*))
+
 (load-file (str pwd "items.clj"))
 (load-file (str pwd "meals.clj"))
 
