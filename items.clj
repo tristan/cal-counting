@@ -205,4 +205,28 @@
        :carbs 28.7
        :protein 0.2
        :fat 0.0}
+      :mashed-potato-fraunhofer ; http://www.acaloriecounter.com/food/potatoes-mashed-dehydrated-prepared-from-flakes-without-milk-whole-milk-and-butter-added
+      {:serve 210 ; cup
+       :cals 203.7
+       :fat 10.773
+       :carbs 22.701
+       :protein 3.759}
+      :sauerkraut
+      {:serve 100
+       :cals 78
+       :carbs 4.3
+       :fat 0.14
+       :protein 0.9}
+      :bauernbratwurst
+      {:serve 100 ; g
+       :cals 305
+       :carbs 0.2
+       :fat 25.6
+       :protein 20.2}
+      :schweinbratwurst
+      {:serve 100
+       :cals 301
+       :carbs 0
+       :fat 28.7
+       :protein 9.9}
      })
