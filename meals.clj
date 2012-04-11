@@ -111,6 +111,19 @@
       {:fried-potato 1}
       {:apple 1
        :banana 1}
+      {:cherry-tomato 1/4
+       :cucumber 1/5
+       :carrot-raw 1/4
+       :capsicum-raw 1/2
+       :feta-cheese 0.25
+       :joghurt-mild-0.1pct-fett 0.25
+       :avocado 1/2
+       :beetroot 1/5
+       }
+      {:chicken-breast (/ (/ 544 2) 100)
+       :chili-sauce 0.2}
+      {:wine 3
+       :cottage-cheese 0.5}
       ])
 
 (def meals-today (var-get (ns-resolve *ns* (symbol (str "meals-" (.format (java.text.SimpleDateFormat. "yyyyMMdd") (java.util.Date.)))))))

@@ -193,4 +193,16 @@
        :fat 4
        :carbs 20
        :protein 3}
+      :beetroot
+      {:serve 100
+       :cals 47
+       :carbs 8.8
+       :protein 1
+       :fat 0.1}
+      :chili-sauce
+      {:serve 100
+       :cals 119
+       :carbs 28.7
+       :protein 0.2
+       :fat 0.0}
      })
