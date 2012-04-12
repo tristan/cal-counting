@@ -132,7 +132,7 @@
       {:schweinbratwurst 0.3
        :bauernbratwurst 0.4
        :mashed-potato-fraunhofer 1.5
-       :sauerkraut 1}
+       :sauerkraut 1.5}
       {:apple 1
        :banana 1}
       {:cherry-tomato 1/4
@@ -140,14 +140,20 @@
        :carrot-raw 1/4
        :capsicum-raw 1/2
        :feta-cheese 0.25
-       :joghurt-mild-0.1pct-fett 0.25
+       :spanish-olives 1/5
+       :joghurt-kraeuter-dressing 0.3
        :avocado 1/2
        :beetroot 1/5
        }
       {:chicken-breast (/ (/ 544 2) 100)
        :chili-sauce 0.2}
-      {:wine 3
-       :cottage-cheese 0.5}
+      {:wine 5
+       :cottage-cheese 1}
       ])
+
+(def meals-20120412
+  [
+   {:bcaa 2}
+   ])
 
 (def meals-today (var-get (ns-resolve *ns* (symbol (str "meals-" (.format (java.text.SimpleDateFormat. "yyyyMMdd") (java.util.Date.)))))))
